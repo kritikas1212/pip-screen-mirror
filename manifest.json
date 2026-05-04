@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Quick PiP Toggle",
+  "version": "1.0.0",
+  "description": "Toggle Picture-in-Picture for the main video on the active tab.",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Toggle Picture-in-Picture"
+  },
+  "commands": {
+    "toggle-pip": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Toggle Picture-in-Picture on the active tab"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
